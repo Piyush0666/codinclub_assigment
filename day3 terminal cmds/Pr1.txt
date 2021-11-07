@@ -1,0 +1,20 @@
+Question1.Get user info from/etc/passwd and change ownership of user's home directory (select userid higher than 1000)
+Ans:Commands
+
+user@LUCIFER MINGW64 ~
+$ sudo chown
+
+user@LUCIFER MINGW64 ~
+$ cd /Desktop/Dir1
+
+user@LUCIFER MINGW64 ~/Desktop/Dir1 
+$ chown --version
+
+LEuser@LUCIFER MINGW64 ~/Desktop/Dir1
+$ sudo chown test sample
+
+user@LUCIFER MINGW64 ~/Desktop/Dir1
+$ chown 1002 sample2
+
+user@LUCIFER MINGW64 ~/Desktop/Dir1
+$ id -u USERNAME	
