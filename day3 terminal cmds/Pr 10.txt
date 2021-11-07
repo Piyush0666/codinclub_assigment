@@ -1,0 +1,15 @@
+problem 10. print last 4 frequently access urls count in sorted order from /var/log/httpd/access.log
+
+Output-->
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ cat var/log/httpd/access.log.txt
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ cat access.log.txt | awk '{print $11}'
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/var/log/httpd
+$ awk '{ a[$0]++ } END {for (i in a) print a[i], i }' access.log.txt | sort -nr
+
+
+

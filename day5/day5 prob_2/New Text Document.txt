@@ -1,0 +1,78 @@
+Selection Practice Problems with if & else
+-----------------------------------------------
+
+
+Question1. Write a program that reads 5 Random 3 Digit values and then outputs the minimum
+and the maximum value
+Ans:
+echo "Array is :" ${array[@]}
+max=${array[0]}
+min=${array[0]}
+
+for((j=0;j<=3;j++))
+ do
+  if [ ${array[j]} -gt $max ]
+   then
+    max=${array[j]}
+elif [ ${array[j]} -lt $min ]
+  then
+    min=${array[j]}
+fi
+done
+echo "Max is :" $max
+echo "Min is :" $min
+
+Question2. Write a program that takes day and month from the command line and prints true if day of month is between March 20 and June 20, false otherwise.
+Ans:
+read -p "Enter Date: " date
+read -p "Enter Month: " Month
+
+# should validate input: non-blank, numeric
+
+combo=0
+result="false"
+st=1
+
+if [ $Month -ge 3 -a $Month -le 6 ]; then
+    # 30 for Apr, Jun
+    # 31 for Mar, May
+    dlimit=$((30 + (Month % 2)))
+    if [ $date -ge 1 -a $date -le $dlimit ]; then
+        combo=$(((Month * 100) + date
+snehal sapkal10:05 AM
+read -p "Enter Date: " date
+read -p "Enter Month: " Month
+              combo=0
+res="false"
+st=1
+if [ $Month -ge 3 -a $Month -le 6 ] 
+then
+ 	    dlimit=$((30 + (Month % 2)))
+    if [ $date -ge 1 -a $date -le $dlimit ]
+  		  then
+      			  combo=$(((Month * 100) + date))
+       
+      			  if [ $combo -ge 320 -a $combo -le 620 ]
+      			  then
+          				  res="true"
+           				 st=0
+      			  fi
+ 	   fi
+fi
+
+echo "$Month/$date $res"
+exit $st
+
+
+
+
+
+
+coinFlip=$((RANDOM%2))
+if [ $coinFlip -eq 0 ]
+then
+    echo "HEADS"
+elif [ $coinFlip -eq 1 ]
+ then
+    echo "TAILS"
+fi

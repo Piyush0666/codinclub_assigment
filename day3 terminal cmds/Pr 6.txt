@@ -1,0 +1,40 @@
+problem 6. Execute command "Hello" and "ls" and check its execution status and print whether command executed successful or not.
+
+Output --->
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ ls
+access.log.txt  command.sh*  temp/  var/
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ echo $?
+0
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ bash command.sh
+Command sucessfully executed
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ hello
+bash: hello: command not found
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ echo $?
+127
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ bash command.sh
+Command sucessfully executed
+
+---------------------------------------------------
+
+Code:
+
+#!/bin/bash
+
+if [ $? -eq 0 ]
+then
+   echo "Command sucessfully executed"
+else
+   echo "Command execution fail"
+fi

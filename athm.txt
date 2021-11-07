@@ -1,0 +1,15 @@
+read -p "Enter A:" a
+read -p "Enter B:" b
+read -p "Enter C:" c
+
+function arithOperation () {
+
+num1=$(( $a + $b * $c ))
+
+num2=$(( $a * $b + $c ))
+
+num3=$(( $a + $b / $c ))
+
+echo $num1 $num2 $num3
+}
+arithOperation $num1 $num2 $num3

@@ -1,0 +1,26 @@
+prob2: Move files from one folder to respective folder
+Ans:
+Output --->
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ mkdir temp
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush
+$ cd temp/
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ touch abc.txt def.txt ghi.txt jkl.txt
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ ls
+abc.txt  def.txt  ghi.txt  jkl.txt
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ notepad loops.sh
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ bash loops.sh
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ ls
+abc/abc.txt  def/def.txt  ghi/ghi.txt  jkl/jkl.txt  loops.sh

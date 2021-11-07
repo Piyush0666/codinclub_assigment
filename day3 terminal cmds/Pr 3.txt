@@ -1,0 +1,17 @@
+prob_3: Append current date to all log files name which has extension .log.1 from a folder
+ANS:Output
+    ------
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ touch abc.log.1 def.log.1 ghi.log.1 jkl.log.1 mno.log.1
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ ls
+abc.log.1  def.log.1  ghi.log.1  jkl.log.1  mno.log.1
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ basename /temp/abc.log.1 .log.1
+abc
+
+user@LUCIFER MINGW64 ~/Desktop/codingclub/Piyush/temp
+$ date +"%d%m%Y"
+27102021

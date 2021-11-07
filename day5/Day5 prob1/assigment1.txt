@@ -1,0 +1,26 @@
+Question1:Use Random Function (( RANDOM )) to get Single Digit
+Ans:number=$((RANDOM%10))
+echo $number
+------------------------------------------------------------------
+Question2: Use Random to get Dice Number between 1 to 6
+Ans:diceNumber=$((RANDOM%7+1))
+echo $diceNumber
+------------------------------------------------------------------
+Question3:Add two Random Dice Number and Print the Result
+Ans:dice1=$((RANDOM%6))
+dice2=$((RANDOM%6))
+sum=$(( $dice1 + $dice2 ))
+echo $sum
+----------------------------------------------------------------------
+Question4: Write a program that reads 5 Random 2 Digit values , then find their
+Ans:Sum and the average
+echo "Enter 5 Random 2 Digit Values"
+read -p "Enter The First Number:" num1
+read -p "Enter The Second Number:" num2
+read -p "Enter The Third Number:" num3
+read -p "Enter The Forth Number:" num4
+read -p "Enter The Fifth Number:" num5
+sum=$(( $num1 + $num2 + $num3 + $num4 + $num5))
+echo "Sum is : $sum"
+avarage=$(( $sum/5))
+echo "Avarage is : $avarage"

@@ -1,2 +1,0 @@
-diceNumber=$((RANDOM%7+1))
-echo $diceNumber
